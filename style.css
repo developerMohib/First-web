@@ -1,0 +1,147 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    width:  100%;
+    height: auto;
+}
+span img {
+    width: 50px;
+    height: auto;
+    margin-top: -4px;
+}
+.navbar-brand {
+    font-weight: 500;
+    font-size: 30px;
+}
+.menu{
+    z-index: 3;
+}
+.menu ul {
+    margin-left: -275px;
+    margin-top: 6px;
+}
+.menu ul li {
+    display: inline-block;
+    padding: 5px 20px;
+    border-right: 1px solid aliceblue;
+}
+.menu ul li a{ 
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: black;
+}
+
+
+.menu ul li:hover > a{
+    text-decoration: underline;
+
+ }
+
+.menu ul li{
+    position: relative;
+} 
+.menu ul li ul {
+    position: absolute;
+    top: 106%;
+    left: 243px;
+    width: 200;
+    background-color: rgb(69, 84, 85);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+
+}
+.menu ul li ul li{
+    display: block;
+    border-bottom: 1px solid royalblue;
+}
+.menu ul li ul li a{
+    display: block;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    width: 300px;
+    background-color:#f7f7f7;
+   
+
+
+}
+
+.mohib-button {
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.slider{
+    background: url(./img/mbr-10.jpg) no-repeat center center; 
+    background-size: cover;
+    padding: 200px ;
+    position: relative;
+    z-index: 2;
+}
+.slider::after{
+    content: " ";
+    width: 1005%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(47, 47, 48, 0.822);
+    z-index: -2;
+}
+.text{
+    
+}
+.slider p{
+    font-size: 22px;
+    color: #fff;
+}
+.slider h1{
+    color: #fff;
+}
+.button {
+    background-color: #5ba533;
+    border-color: #5ba533;
+    color: #ffffff;
+    padding: 10px 80px;
+    font-weight: 600;
+}
+.form{
+    font-size: 26px;
+}
+.v-play {
+    text-align: center;
+}
+.v-play:hover img{
+    transform: scale( 1.1, 1.1);
+    transition: .4s;
+}
+.v-play img {
+    border: 15px solid rgb(212, 209, 209);
+}
+
+.card-body h4 {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+.card-body p{
+    font-size: 20px;
+}
+.text {
+    margin-top: 100px;
+}
+.work-table{
+    
+}
+.work-table img{
+    float: left;
+    width: 50%;
+}
+.work-table .card-body{
+    float: right;
+    width: 50%;
+}
